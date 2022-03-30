@@ -1,13 +1,46 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,400i,700|Roboto+Slab:700');
 
-	h1
-	{
-		color: blue;
-	}	
-	body
-	{
-		background-color: red;
-	}
+header ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #454545;
+}
+
+header li {
+	float: left;
+}
+
+header li a {
+	display: block;
+	text-align: center;
+	padding: 10px 10px;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 700;
+	
+	color: white;
+
+}
+
+li a:hover:not(.active) {
+	background-color: #505050;
+	color: white;
+}
+
+
+header li.active a {
+	background-color: white;
+	color:orangered;
+	
+	
+	
+}
+
+
+
+
 	
 		
 		
