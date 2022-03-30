@@ -1,13 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,400i,700|Roboto+Slab:700');
 
-	h1
-	{
-		color: blue;
-	}	
-	body
-	{
-		background-color: red;
-	}
+/*Bdy Style*/
+body {
+	
+	/*Margin for the all website*/
+	margin: 0px;
+}
+
+
+
+
+/*Footer Style*/
+
+footer {
+	background-color: #404040;
+	margin: 0px;
+	position: absolute;
+	width: 100%;
+}
+
+#logo {
+	text-align: center;
+	margin: auto;
+	display: flex;
+	height: auto;
+}
+
 	
 		
 		
