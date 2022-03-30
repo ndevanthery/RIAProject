@@ -1,17 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,400i,700|Roboto+Slab:700');
 
+/Title Header Style/
+h1 {
+	line-height: 150px;
+	background-color: red;
+	background-image: linear-gradient(to bottom, #ff0000, #ff4a3d, #ff7168, #ff9490, #f9b4b4);
+	margin: 0px;
+	color: white;
+	text-align: center;
+}
+
+
+/*navigation bar configurations*/
+
 header ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	/*dark grey background of the list*/
 	background-color: #454545;
 }
+/*hamburger not displayed*/
+header li img{
+	opacity: 0;
+}
 
+/*to have a horizontal menu*/
 header li {
 	float: left;
 }
 
+/* display each tabs as a block, setup font size color and bold*/
 header li a {
 	display: block;
 	text-align: center;
@@ -24,26 +44,18 @@ header li a {
 
 }
 
-li a:hover:not(.active) {
-	background-color: #505050;
+/* when you pass over an unactive object*/
+header li a:hover:not(.active) {
+	background-color: #555555;
 	color: white;
 }
 
-
+/* when the block is the one which is active*/
 header li.active a {
 	background-color: white;
-	color:orangered;
-	
-	
-	
+	color:orangered;	
 }
 
-
-
-
-	
-		
-		
 
 
 /*Bdy Style*/
@@ -52,8 +64,6 @@ body {
 	/*Margin for the all website*/
 	margin: 0px;
 }
-
-
 
 
 /*Footer Style*/
@@ -74,6 +84,27 @@ footer {
 
 	
 		
+
+/*paragraphes*/
+
+main a{
+	color: orangered;
+}
+
+main header p {
+	border-top: solid 1px;
+	color: gray;
+	text-align: right;
+}
+
+/*aside*/
+
+aside h3{
+	background-color:orangered;
+	border:solid black;
+	color:white;
+	}
+
 		
 
 
