@@ -46,3 +46,34 @@ header li.active a {
 		
 
 
+/*Bdy Style*/
+body {
+	
+	/*Margin for the all website*/
+	margin: 0px;
+}
+
+
+
+
+/*Footer Style*/
+
+footer {
+	background-color: #404040;
+	margin: 0px;
+	position: absolute;
+	width: 100%;
+}
+
+#logo {
+	text-align: center;
+	margin: auto;
+	display: flex;
+	height: auto;
+}
+
+	
+		
+		
+
+
