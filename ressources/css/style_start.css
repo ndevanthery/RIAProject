@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,400i,700|Roboto+Slab:700');
 
-/Title Header Style/
+/*Title Header Style*/
 h1 {
 	line-height: 150px;
 	background-color: red;
@@ -96,14 +96,42 @@ main header p {
 	color: gray;
 	text-align: right;
 }
+main section{
+	width: 75%
+}
 
 /*aside*/
 
-aside h3{
-	background-color:orangered;
-	border:solid black;
-	color:white;
-	}
+aside h3 {
+	line-height: 40px;
+	background-color: orangered;
+	background-size: 300px 300px;
+	color: white;
+	text-align: left;
+	padding:0px 0px 0px 0px 0px;
+}
+aside ul{
+	display:table;
+	list-style-type: none;
+	text-align:left;
+
+}
+aside li{
+	display:table;
+	text-align:left;
+	padding: 0px ;
+}
+aside div {
+	display: table;
+	box-sizing: content-box;
+	position: absolute;
+	left: 80%;
+	top: 30%;
+	width: 18%;
+	border: 3px solid;
+	padding: 0px 0px 0px 0px;
+	box-shadow: 5px 10px #888888;
+}
 
 		
 
