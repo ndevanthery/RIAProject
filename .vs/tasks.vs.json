@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "tâche-mockup_start",
+      "appliesTo": "mockup_start.html",
+      "type": "launch"
+    }
+  ]
+}
