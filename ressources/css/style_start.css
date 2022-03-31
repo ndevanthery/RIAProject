@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,400i,700|Roboto+Slab:700');
 
-/*Title Header Style*/
 h1 {
-	line-height: 150px;
-	background-color: red;
-	background-image: linear-gradient(to bottom, #ff0000, #ff4a3d, #ff7168, #ff9490, #f9b4b4);
-	margin: 0px;
-	color: white;
+	padding: 40px;
+	padding-bottom: 0px;
 	text-align: center;
+	background-image: linear-gradient(to bottom, #ff0000, #ff4a3d, #ff7168, #ff9490);
+	color: white;
+	border-bottom-width: 20px;
+	border-bottom-color: #EE6743;
+	border-bottom-style: solid;
+	margin-bottom: 0px;
+	margin: 0px;
 }
-
 
 /*navigation bar configurations*/
 
@@ -22,7 +23,7 @@ header ul {
 	background-color: #454545;
 }
 /*hamburger not displayed*/
-header li img{
+header li img {
 	opacity: 0;
 }
 
@@ -31,36 +32,33 @@ header li {
 	float: left;
 }
 
-/* display each tabs as a block, setup font size color and bold*/
-header li a {
-	display: block;
-	text-align: center;
-	padding: 10px 10px;
-	text-decoration: none;
-	font-size: 20px;
-	font-weight: 700;
-	
-	color: white;
+	/* display each tabs as a block, setup font size color and bold*/
+	header li a {
+		display: block;
+		text-align: center;
+		padding: 10px 10px;
+		text-decoration: none;
+		font-size: 20px;
+		font-weight: 700;
+		color: white;
+	}
 
-}
+		/* when you pass over an unactive object*/
+		header li a:hover:not(.active) {
+			background-color: #555555;
+			color: white;
+		}
 
-/* when you pass over an unactive object*/
-header li a:hover:not(.active) {
-	background-color: #555555;
-	color: white;
-}
-
-/* when the block is the one which is active*/
-header li.active a {
-	background-color: white;
-	color:orangered;	
-}
+	/* when the block is the one which is active*/
+	header li.active a {
+		background-color: white;
+		color: orangered;
+	}
 
 
 
 /*Bdy Style*/
 body {
-	
 	/*Margin for the all website*/
 	margin: 0px;
 }
@@ -73,6 +71,7 @@ footer {
 	margin: 0px;
 	position: absolute;
 	width: 100%;
+	bottom: 0px;
 }
 
 #logo {
@@ -82,12 +81,12 @@ footer {
 	height: auto;
 }
 
-	
-		
+
+
 
 /*paragraphes*/
 
-main a{
+main a {
 	color: orangered;
 }
 
@@ -96,7 +95,8 @@ main header p {
 	color: gray;
 	text-align: right;
 }
-main section{
+
+main section {
 	width: 75%
 }
 
@@ -108,19 +108,22 @@ aside h3 {
 	background-size: 300px 300px;
 	color: white;
 	text-align: left;
-	padding:0px 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px 0px;
+	margin: 0px;
 }
-aside ul{
-	display:table;
-	list-style-type: none;
-	text-align:left;
 
+aside ul {
+	display: table;
+	list-style-type: none;
+	text-align: left;
 }
-aside li{
-	display:table;
-	text-align:left;
-	padding: 0px ;
+
+aside li {
+	display: table;
+	text-align: left;
+	padding: 0px;
 }
+
 aside div {
 	display: table;
 	box-sizing: content-box;
@@ -132,7 +135,3 @@ aside div {
 	padding: 0px 0px 0px 0px;
 	box-shadow: 5px 10px #888888;
 }
-
-		
-
-
