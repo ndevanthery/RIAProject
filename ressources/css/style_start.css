@@ -136,21 +136,18 @@ aside div {
 	box-shadow: 5px 10px #888888;
 }
 
-img {
+#imgDesign {
 	height: 100%;
 	width: 100%;
     object-fit: contain;
 }
+
 
 .bigImage {
 	height: 300px;
 	width: 300px;
 }
 
-.footerImage {
-	height: fit-content;
-	width: fit-content;
-}
 .mediumImage {
 	height: 200px;
 	width: 200px;
