@@ -135,3 +135,75 @@ aside div {
 	padding: 0px 0px 0px 0px;
 	box-shadow: 5px 10px #888888;
 }
+
+img {
+	height: 100%;
+	width: 100%;
+    object-fit: contain;
+}
+
+.bigImage {
+	height: 300px;
+	width: 300px;
+}
+
+.footerImage {
+	height: fit-content;
+	width: fit-content;
+}
+.mediumImage {
+	height: 200px;
+	width: 200px;
+}
+.smalImage {
+    height: 100px;
+    width: 100px;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+	#customers th {
+		padding-top: 12px;
+		padding-bottom: 12px;
+		text-align: left;
+		background-color: rgb(140, 140, 140);
+		color: white;
+	}
+
