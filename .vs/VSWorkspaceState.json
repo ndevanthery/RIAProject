@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\ressources",
-    "\\ressources\\css"
+    "\\ressources\\css",
+    "\\ressources\\images"
   ],
-  "SelectedNode": "\\description_start.html",
+  "SelectedNode": "\\ressources\\css\\style_start.css",
   "PreviewInSolutionExplorer": false
 }
