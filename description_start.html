@@ -5,35 +5,65 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="ressources/css/style_start.css">
+    <link rel="Script1" href="\ressources\script\Script1.js" />
 </head>
 <body>
 
-<header>
-    <h1>HES-SO Vs - 624-2 - HTML/CSS/JavaScript</h1>
-    <nav>
-        <!-- Hamburger -->
-        <ul>
-            <li class="hamburger">
-                <img src="ressources/images/hamburger_icon.svg">
-            </li>
-            <li class="active">
-                <a href="description_start.html">Description</a>
-            </li>
-            <li>
-                <a href="maquettes_start.html">Maquettes</a>
-            </li>
-            <li>
-                <a href="mockup_start.html">Mockup</a>
-            </li>
-            <li>
-                <a href="flux_start.html">Flux</a>
-            </li>
-            <li>
-                <a href="journal_de_bord_start.html">Journal de bord</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <h1>HES-SO Vs - 624-2 - HTML/CSS/JavaScript</h1>
+
+        <div class="topnav" id="myTopnav">
+            <a href="description_start.html" class="active">Description</a>
+            <a href="maquettes_start.html">Maquettes</a>
+            <a href="mockup_start.html">Mockup</a>
+            <a href="flux_start.html">Flux</a>
+            <a href="journal_de_bord_start.html">Journal de bord</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+
+
+        <!--
+        <nav>
+            <ul>
+                <li class="hamburger">
+                    <img src="ressources/images/hamburger_icon.svg">
+                </li>
+                <li class="active">
+                    <a href="description_start.html">Description</a>
+                </li>
+                <li>
+                    <a href="maquettes_start.html">Maquettes</a>
+                </li>
+                <li>
+                    <a href="mockup_start.html">Mockup</a>
+                </li>
+                <li>
+                    <a href="flux_start.html">Flux</a>
+                </li>
+                <li>
+                    <a href="journal_de_bord_start.html">Journal de bord</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    </li>
+            </ul>
+        </nav>
+            -->
+    </header>
 
 <main>
     <!-- Début zone pour votre contenu -->

@@ -8,32 +8,34 @@
 </head>
 <body>
 
-<header>
-    <h1>HES-SO Vs - 624-2 - HTML/CSS/JavaScript</h1>
-    <nav>
-        <!-- Hamburger -->
-        <ul>
-            <li class="hamburger">
-                <img src="ressources/images/hamburger_icon.svg">
-            </li>
-            <li>
-                <a href="description_start.html">Description</a>
-            </li>
-            <li>
-                <a href="maquettes_start.html">Maquettes</a>
-            </li>
-            <li>
-                <a href="mockup_start.html">Mockup</a>
-            </li>
-            <li class="active">
-                <a href="flux_start.html">Flux</a>
-            </li>
-            <li>
-                <a href="journal_de_bord_start.html">Journal de bord</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <h1>HES-SO Vs - 624-2 - HTML/CSS/JavaScript</h1>
+
+        <div class="topnav" id="myTopnav">
+            <a href="description_start.html" >Description</a>
+            <a href="maquettes_start.html">Maquettes</a>
+            <a href="mockup_start.html">Mockup</a>
+            <a href="flux_start.html" class="active">Flux</a>
+            <a href="journal_de_bord_start.html">Journal de bord</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+
+
+    </header>
 
 <main>
     <!-- Début zone pour votre contenu -->

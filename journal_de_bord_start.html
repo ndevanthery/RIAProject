@@ -10,29 +10,32 @@
 
     <header>
         <h1>HES-SO Vs - 624-2 - HTML/CSS/JavaScript</h1>
-        <nav>
-            <!-- Hamburger -->
-            <ul>
-                <li class="hamburger">
-                    <img src="ressources/images/hamburger_icon.svg">
-                </li>
-                <li>
-                    <a href="description_start.html">Description</a>
-                </li>
-                <li>
-                    <a href="maquettes_start.html">Maquettes</a>
-                </li>
-                <li>
-                    <a href="mockup_start.html">Mockup</a>
-                </li>
-                <li>
-                    <a href="flux_start.html">Flux</a>
-                </li>
-                <li class="active">
-                    <a href="journal_de_bord_start.html">Journal de bord</a>
-                </li>
-            </ul>
-        </nav>
+
+        <div class="topnav" id="myTopnav">
+            <a href="description_start.html">Description</a>
+            <a href="maquettes_start.html">Maquettes</a>
+            <a href="mockup_start.html" >Mockup</a>
+            <a href="flux_start.html">Flux</a>
+            <a href="journal_de_bord_start.html" class="active">Journal de bord</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+
+
+
     </header>
 
     <main>
@@ -70,19 +73,34 @@
                         <td>Mégane Solliard</td>
                     </tr>
                     <tr>
-                        <td>01.03.2022</td>
+                        <td>01.04.2022</td>
                         <td>Creation du site HTML/CSS (Ajout de la page "Mockup")</td>
                         <td>Abdullah Binjos</td>
                     </tr>
                     <tr>
-                        <td>02.03.2022</td>
+                        <td>02.04.2022</td>
                         <td>Creation du site HTML/CSS (Ajout de la page "Journal de Bord")</td>
                         <td>Abdullah Binjos</td>
                     </tr>
                     <tr>
-                        <td>02.03.2022</td>
+                        <td>02.04.2022</td>
                         <td>Creation du site HTML/CSS (Ajout de la page "Flux")</td>
                         <td>Abdullah Binjos</td>
+                    </tr>
+                    <tr>
+                        <td>02.04.2022</td>
+                        <td>CSS page Mockup</td>
+                        <td>Simon Beaud</td>
+                    </tr>
+                    <tr>
+                        <td>03.04.2022</td>
+                        <td>Task barre responsive</td>
+                        <td>Simon Beaud</td>
+                    </tr>
+                    <tr>
+                        <td>03.04.2022</td>
+                        <td>Journal de bord responsive</td>
+                        <td>Simon Beaud</td>
                     </tr>
                 </table>
             </article>
