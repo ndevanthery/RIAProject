@@ -62,6 +62,34 @@ main section {
 	margin: 25px;
 }
 
+#imgDesign {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+.bigImage {
+	margin: 50px;
+	display: flex;
+}
+
+.mediumImage {
+	height: 200px;
+	width: 200px;
+}
+
+.smalImage {
+	width: 100px;
+	margin-bottom: 50px;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+}
+
+
 /*-------------------------------------------------------------------------------------------------------*/
 /*NavBar*/
 
@@ -128,20 +156,6 @@ main section {
 /*-------------------------------------------------------------------------------------------------------*/
 /*Description Page*/
 
-
-/*-------------------------------------------------------------------------------------------------------*/
-/*Maquettes Page*/
-
-
-/*-------------------------------------------------------------------------------------------------------*/
-/*Mockups Page*/
-
-
-/*-------------------------------------------------------------------------------------------------------*/
-/*Description Page*/
-
-
-
 /*aside*/
 
 aside h3 {
@@ -178,79 +192,27 @@ aside div {
 	box-shadow: 5px 10px #888888;
 }
 
-#imgDesign {
-	height: 100%;
-	width: 100%;
-    object-fit: contain;
-}
-
-
-.bigImage {
-	margin: 50px;
-	display: flex;
-}
-
-.mediumImage {
-	height: 200px;
-	width: 200px;
-}
-.smalImage {
-    width: 100px;
-	margin-bottom:50px;
-}
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-.row {
-    display: flex;
-	margin-bottom:100px;
-}
-
-.column {
-    flex: 33.33%;
-    padding: 5px;
-}
-
-#customers {
-    font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
-    border-collapse: collapse;
-    width: 95%;
-}
-
-	#customers td, #customers th {
-		border: 1px solid #ddd;
-		padding: 8px;
+@media screen and (max-width: 600px) {
+	aside div {
+		width: 90%;
+		position: absolute;
+		top: auto;
+		right: 15px;
+		left: 5%;
 	}
-
-#customers tr:nth-child(even) {
-    background-color: #f2f2f2;
 }
 
-#customers tr:hover {
-    background-color: #ddd;
-}
+/*-------------------------------------------------------------------------------------------------------*/
+/*Maquettes Page*/
 
-	#customers th {
-		padding-top: 12px;
-		padding-bottom: 12px;
-		padding-right: 12px;
-		text-align: center;
-		background-color: rgb(140, 140, 140);
-		color: white;
-	}
 
-table{
-	margin:right: 50px;
+/*-------------------------------------------------------------------------------------------------------*/
+/*Mockups Page*/
+#teteImage {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	border-radius: 15px;
 }
 
 .tete {
@@ -260,40 +222,60 @@ table{
 	margin: 14px;
 	background-color: white;
 }
-#cassis {
-	background-image: url("\ressources\images\MockupFaceDalaiDesign.jpg");
-	
-}
-#lama {
-	background-image: url("ressources/images/sierre.jpg");
-	background-size: 100% 100%;
-	background-color: orange;
-}
-#trump {
-	/*background: url("ressources/images/MockupFaceTrumpDesign.jpg");*/
-	background-size: 100% 100%;
-	background-color: orange;
+
+
+@media screen and (max-width: 600px) {
+	.tete {
+		width: 100%;
+		top: auto;
+		right: 15px;
+	}
 }
 
-.row-btn {
-	display: inline-block;
-}
 
-#teteImage {
+#mockupImage {
 	max-width: 100%;
 	max-height: 100%;
 	display: block;
-	border-radius: 15px;
+	border: 1px solid black;
+}
+
+.mockup {
+	height: 400px;
+	width: 220px;
+	margin: 14px;
+
+}
+
+@media screen and (max-width: 600px) {
+	.mockup {
+		width: 100%;
+		top: auto;
+		right: 15px;
+	}
 }
 
 
-/*Flux page*/
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*Flux Page*/
 
 .sitemap {
 	height: 500px;
 	width: 1000px;
 	margin: 14px;
 }
+
+@media screen and (max-width: 600px) {
+	.sitemap {
+		width: 100%;		
+		top: auto;
+		right: 15px;		
+	}
+}
+
+
 
 #sitemapImage {
 	max-width: 100%;
@@ -307,3 +289,72 @@ table{
 	width: 1000px;
 	margin: 14px;
 }
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+		/*Journal de bord*/
+
+
+		.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.row {
+	display: flex;
+	margin-bottom: 100px;
+}
+
+.column {
+	flex: 33.33%;
+	padding: 5px;
+}
+
+#customers {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border-collapse: collapse;
+	width: 95%;
+}
+
+	#customers td, #customers th {
+		border: 1px solid #ddd;
+		padding: 8px;
+	}
+
+	#customers tr:nth-child(even) {
+		background-color: #f2f2f2;
+	}
+
+	#customers tr:hover {
+		background-color: #ddd;
+	}
+
+	#customers th {
+		padding-top: 12px;
+		padding-bottom: 12px;
+		padding-right: 12px;
+		text-align: center;
+		background-color: rgb(140, 140, 140);
+		color: white;
+	}
+
+table {
+	margin: right: 50px;
+}
+
+.row-btn {
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
