@@ -3,8 +3,9 @@
     "",
     "\\ressources",
     "\\ressources\\css",
-    "\\ressources\\images"
+    "\\ressources\\images",
+    "\\ressources\\script"
   ],
-  "SelectedNode": "\\mockup_start.html",
+  "SelectedNode": "\\ressources\\css\\style_start.css",
   "PreviewInSolutionExplorer": false
 }

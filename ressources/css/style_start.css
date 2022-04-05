@@ -4,7 +4,7 @@ html{
 	min-height: 100%;
 }
 
-
+/*-------------------------------------------------------------------------------------------------------*/
 /*Bdy Style*/
 body {
 	/*Margin for the all website*/
@@ -12,7 +12,7 @@ body {
 	height: 100%;
 }
 
-
+/*-------------------------------------------------------------------------------------------------------*/
 /*Footer Style*/
 
 footer {
@@ -30,18 +30,8 @@ footer {
 	height: auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+/*-------------------------------------------------------------------------------------------------------*/
+/*General design*/
 
 
 h1 {
@@ -57,53 +47,23 @@ h1 {
 	margin: 0px;
 }
 
-
-
-/*navigation bar configurations*/
-/*
-header ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	/*dark grey background of the list
-	background-color: #454545;
-}
-/*hamburger not displayed
-header li img {
-	opacity: 0;
+main a {
+	color: orangered;
 }
 
-/*to have a horizontal menu
-header li {
-	float: left;
+main header p {
+	border-top: solid 1px;
+	color: gray;
+	text-align: right;
 }
 
-	/* display each tabs as a block, setup font size color and bold
-	header li a {
-		display: block;
-		text-align: center;
-		padding: 10px 10px;
-		text-decoration: none;
-		font-size: 20px;
-		font-weight: 700;
-		color: white;
-	}
+main section {
+	width: 75%;
+	margin: 25px;
+}
 
-		/* when you pass over an unactive object
-		header li a:hover:not(.active) {
-			background-color: #555555;
-			color: white;
-		}
-
-	/* when the block is the one which is active
-	header li.active a {
-		background-color: white;
-		color: orangered;
-	}
-
-
-	*/
+/*-------------------------------------------------------------------------------------------------------*/
+/*NavBar*/
 
 .topnav {
 	overflow: hidden;
@@ -165,51 +125,22 @@ header li {
 		}
 }
 
+/*-------------------------------------------------------------------------------------------------------*/
+/*Description Page*/
 
 
+/*-------------------------------------------------------------------------------------------------------*/
+/*Maquettes Page*/
 
 
+/*-------------------------------------------------------------------------------------------------------*/
+/*Mockups Page*/
 
 
+/*-------------------------------------------------------------------------------------------------------*/
+/*Description Page*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*paragraphes*/
-
-main a {
-	color: orangered;
-}
-
-main header p {
-	border-top: solid 1px;
-	color: gray;
-	text-align: right;
-}
-
-main section {
-	width: 75%;
-	margin: 25px;
-}
 
 /*aside*/
 
@@ -353,4 +284,26 @@ table{
 	max-height: 100%;
 	display: block;
 	border-radius: 15px;
+}
+
+
+/*Flux page*/
+
+.sitemap {
+	height: 500px;
+	width: 1000px;
+	margin: 14px;
+}
+
+#sitemapImage {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	border-radius: 15px;
+}
+
+.flux {
+	height: 500px;
+	width: 1000px;
+	margin: 14px;
 }
