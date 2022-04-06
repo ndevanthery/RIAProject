@@ -68,10 +68,7 @@ main section {
 	object-fit: contain;
 }
 
-.bigImage {
-	margin: 50px;
-	display: flex;
-}
+
 
 .mediumImage {
 	height: 200px;
@@ -92,6 +89,9 @@ main section {
 
 /*-------------------------------------------------------------------------------------------------------*/
 /*NavBar*/
+
+
+
 
 .topnav {
 	overflow: hidden;
@@ -129,10 +129,10 @@ main section {
 		display: none;
 	}
 
-	.topnav a.icon {
-		float: right;
-		display: block;
-	}
+		.topnav a.icon {
+			float: inherit;
+			display: block;
+		}
 }
 
 @media screen and (max-width: 600px) {
@@ -145,13 +145,14 @@ main section {
 			right: 0;
 			top: 0;
 		}
-
+		
 		.topnav.responsive a {
 			float: none;
 			display: block;
 			text-align: center;
 		}
 }
+
 
 /*-------------------------------------------------------------------------------------------------------*/
 /*Description Page*/
@@ -253,9 +254,30 @@ aside div {
 		top: auto;
 		right: 15px;
 	}
+	.row {
+		height: 150px;
+	}
 }
 
-
+.bigImage {
+	height: 400px;
+	width: 220px;
+	margin: 14px;
+}
+@media screen and (max-width: 600px) {
+	.bigImage {
+		width: 100%;
+		top: auto;
+		right: 15px;
+		height: 0px;
+	}
+}
+#BigImageID {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	border: 1px solid black;
+}
 
 
 /*-------------------------------------------------------------------------------------------------------*/
@@ -269,9 +291,10 @@ aside div {
 
 @media screen and (max-width: 600px) {
 	.sitemap {
-		width: 100%;		
+		width: 100%;
 		top: auto;
-		right: 15px;		
+		right: 15px;
+		height: 150px;
 	}
 }
 
@@ -285,17 +308,32 @@ aside div {
 }
 
 .flux {
-	height: 500px;
+	height: auto;
 	width: 1000px;
 	margin: 14px;
 }
 
+@media screen and (max-width: 600px) {
+	.flux {
+		width: 100%;
+		top: auto;
+		right: 15px;
+	}
+}
 
-/*-------------------------------------------------------------------------------------------------------*/
-		/*Journal de bord*/
+#fluxImage {
+	max-width: 40%;
+	max-height: 40%;
+	display: block;
+}
 
 
-		.row::after {
+
+	/*-------------------------------------------------------------------------------------------------------*/
+	/*Journal de bord*/
+
+
+	.row::after {
 	content: "";
 	clear: both;
 	display: table;
@@ -316,6 +354,7 @@ aside div {
 	font-size: 12px;
 	border-collapse: collapse;
 	width: 95%;
+	margin-bottom: 150px;
 }
 
 	#customers td, #customers th {
