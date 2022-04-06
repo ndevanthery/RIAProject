@@ -203,9 +203,35 @@ aside div {
 	}
 }
 
+.space {
+	height: 384px
+}
+
 /*-------------------------------------------------------------------------------------------------------*/
 /*Maquettes Page*/
+.maquette {
+	height: 500px;
+	width: 1000px;
+	margin: 14px;
+	margin-bottom: 150px;
+}
 
+@media screen and (max-width: 600px) {
+	.maquette {
+		width: 100%;
+		top: auto;
+		right: 15px;
+		height: 150px;
+	}
+}
+
+
+
+#maquetteImage {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+}
 
 /*-------------------------------------------------------------------------------------------------------*/
 /*Mockups Page*/
@@ -247,6 +273,10 @@ aside div {
 	margin: 14px;
 
 }
+.rowMockup {
+	margin-bottom: 100px;
+	display: flex;
+}
 
 @media screen and (max-width: 600px) {
 	.mockup {
@@ -254,8 +284,9 @@ aside div {
 		top: auto;
 		right: 15px;
 	}
-	.row {
+	.rowMockup {
 		height: 150px;
+		
 	}
 }
 
@@ -313,11 +344,22 @@ aside div {
 	margin: 14px;
 }
 
+.rowFlux {
+	margin-bottom: 100px;
+	display: flex;
+}
+
+
+
 @media screen and (max-width: 600px) {
 	.flux {
-		width: 100%;
+		width: 200%;
 		top: auto;
 		right: 15px;
+		margin: 0px;
+	}
+	.rowFlux{
+		display: block;
 	}
 }
 
