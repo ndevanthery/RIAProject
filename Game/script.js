@@ -1,38 +1,49 @@
-// Game Constants & Variables
+// Initial Values
 let inputDir = { x: 0, y: 0 };
+let actualState = "";
+let score = 0;
+let lastRefreshTime = 0;
+
+//REMOVE IF WE DO NOT USE SOUNDS
 const foodSound = new Audio('src/res/music/food.mp3');
 const gameOverSound = new Audio('src/res/music/gameover.mp3');
 const moveSound = new Audio('src/res/music/move.mp3');
 const musicSound = new Audio('src/res/music/music.mp3');
-let speed = 19;
-let score = 0;
-let lastPaintTime = 0;
-let snakeArr = [
-    { x: 13, y: 15 }
-];
 
-food = { x: 6, y: 7 };
+
+//game Parameters
+let speed = 10;
+let gridSize = 18;
+
+//initial positions of the snake and the food ( first launch)
+let snakeArr = [
+    { x: calculateRandom(), y: calculateRandom() }
+];
+food = { x: calculateRandom(), y: calculateRandom() };
 
 // Game Functions
 function main(ctime) {
+    //refresh
     window.requestAnimationFrame(main);
-    // console.log(ctime)
-    if ((ctime - lastPaintTime) / 1000 < 1 / speed) {
+    if ((ctime - lastRefreshTime) / 1000 < 1 / speed) {
         return;
     }
-    lastPaintTime = ctime;
+    lastRefreshTime = ctime;
+
+    //game logic
     gameEngine();
 }
 
 function isCollide(snake) {
-    // If you bump into yourself 
+    // collision with your own body
     for (let i = 1; i < snakeArr.length; i++) {
         if (snake[i].x === snake[0].x && snake[i].y === snake[0].y) {
             return true;
         }
     }
-    // If you bump into the wall
-    if (snake[0].x >= 18 || snake[0].x <= 0 || snake[0].y >= 18 || snake[0].y <= 0) {
+    // collision with a wall
+    //if snake head is out of borders
+    if (snake[0].x >= gridSize || snake[0].x <= 0 || snake[0].y >= gridSize || snake[0].y <= 0) {
         return true;
     }
 
@@ -45,8 +56,9 @@ function gameEngine() {
         gameOverSound.play();
         musicSound.pause();
         inputDir = { x: 0, y: 0 };
+        actualState = "";
         alert("Game Over. Press any key to play again!");
-        snakeArr = [{ x: 13, y: 15 }];
+        snakeArr = [{ x: 5, y: 5 }];
         musicSound.play();
         score = 0;
     }
@@ -62,9 +74,10 @@ function gameEngine() {
         }
         scoreBox.innerHTML = "Score: " + score;
         snakeArr.unshift({ x: snakeArr[0].x + inputDir.x, y: snakeArr[0].y + inputDir.y });
-        let a = 2;
-        let b = 16;
-        food = { x: Math.round(a + (b - a) * Math.random()), y: Math.round(a + (b - a) * Math.random()) }
+
+
+        //generate random position for the new food
+        food = { x: calculateRandom(), y: calculateRandom() }
     }
 
     // Moving the snake
@@ -101,6 +114,12 @@ function gameEngine() {
 
 }
 
+function calculateRandom() {
+    let a = 2;
+    let b = 16;
+    return Math.round(a + (b - a) * Math.random());
+}
+
 
 // Main logic starts here
 musicSound.play();
@@ -116,31 +135,47 @@ else {
 
 window.requestAnimationFrame(main);
 window.addEventListener('keydown', e => {
-    inputDir = { x: 0, y: 1 } // Start the game
+/*    inputDir = { x: 0, y: 1 } // Start the game*/
     moveSound.play();
     switch (e.key) {
         case "ArrowUp":
-            console.log("ArrowUp");
-            inputDir.x = 0;
-            inputDir.y = -1;
+            if (actualState == "down") {
+            } else { 
+                inputDir.x = 0;
+                inputDir.y = -1;
+                actualState = "up";
+            }
+           
+            
             break;
 
         case "ArrowDown":
-            console.log("ArrowDown");
-            inputDir.x = 0;
-            inputDir.y = 1;
+            if (actualState == "up") { }
+            else {
+                inputDir.x = 0;
+                inputDir.y = 1;
+                actualState = "down";
+            }
+
             break;
 
         case "ArrowLeft":
-            console.log("ArrowLeft");
-            inputDir.x = -1;
-            inputDir.y = 0;
+            if (actualState == "right") { }
+            else {
+                inputDir.x = -1;
+                inputDir.y = 0;
+                actualState = "left";
+            }
+
             break;
 
         case "ArrowRight":
-            console.log("ArrowRight");
-            inputDir.x = 1;
-            inputDir.y = 0;
+            if (actualState == "left") { }
+            else {
+                inputDir.x = 1;
+                inputDir.y = 0;
+                actualState = "right";
+            }
             break;
         default:
             break;
