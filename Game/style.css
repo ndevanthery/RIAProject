@@ -33,22 +33,50 @@
     font-weight: bold;
     font-family: 'New Tegomin', serif;
 }
+#chooseCharacter {
+    position: absolute;
+    top: 119px;
+    right: 140px;
+    font-size: 18px;
+    font-family: 'New Tegomin', serif;
+}
+#parameters {
+    position: absolute;
+    top: 149px;
+    right: 140px;
+    font-size: 18px;
+    font-family: 'New Tegomin', serif;
+}
+
 
 /*this is the design of the grid for the snake*/
 #board {
-    /*background: linear-gradient(rgb(187, 251, 187), rgb(34, 123, 52));*/
     
     width: 90vmin;
     height: 92vmin;
     border: 2px solid black;
     display: grid;
-    grid-template-rows: repeat(18, 1fr);
-    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr);
 }
 
 /*design of the head of the snake*/
-.head {
+.headConstantin {
+    background-image: url('./assets/constantin.png');
+    background-size: contain;
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.headTrump {
     background-image: url('./assets/trump.png');
+    background-size: contain;
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.headDalailama {
+    background-image: url('./assets/dalailama.png');
     background-size: contain;
     transform: scale(1.02);
     border-radius: 9px;
@@ -63,10 +91,20 @@
 
 
 /*deisign of the "apples" (food) for the snake*/
-.food {
-    /*background: linear-gradient(blue, green);*/
+.foodTrump {
     background-image: url('./assets/moneyBag.jpg');
     background-size: contain;
-/*    border: .25vmin solid black;
-*/    border-radius: 8px;
+    border-radius: 8px;
+}
+
+.foodDalailama {
+    background-image: url('./assets/peace.png');
+    background-size: contain;
+    border-radius: 8px;
+}
+
+.foodConstantin {
+    background-image: url('./assets/football.png');
+    background-size: contain;
+    border-radius: 8px;
 }

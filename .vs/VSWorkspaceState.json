@@ -1,11 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Game",
     "\\ressources",
     "\\ressources\\css",
     "\\ressources\\images",
     "\\ressources\\script"
   ],
-  "SelectedNode": "\\ressources\\css\\style_start.css",
+  "SelectedNode": "\\Game\\style.css",
   "PreviewInSolutionExplorer": false
 }
