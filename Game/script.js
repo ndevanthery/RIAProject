@@ -21,6 +21,7 @@ else {
 
 //by default, first character is trump
 let person = "Trump";
+let snakeClass = 'green';
 
 
 //game Parameters
@@ -104,7 +105,7 @@ function gameEngine() {
                 snakeElement.classList.add('head' + person);
             }
             else {
-                snakeElement.classList.add('snake');
+                snakeElement.classList.add(snakeClass+'Snake');
             }
             board.appendChild(snakeElement);
         });
@@ -127,6 +128,45 @@ function gameEngine() {
             person = "Constantin";
 
         });
+
+        const green = document.getElementById('green');
+        green.addEventListener('click', function onClick(event) {
+
+            snakeClass = "green";
+        });
+
+        const red = document.getElementById('red');
+        red.addEventListener('click', function onClick(event) {
+
+            snakeClass = "red";
+        });
+
+        const yellow = document.getElementById('yellow');
+        yellow.addEventListener('click', function onClick(event) {
+
+            snakeClass = "yellow";
+        });
+
+        const grey = document.getElementById('grey');
+        grey.addEventListener('click', function onClick(event) {
+
+            snakeClass = "grey";
+        });
+
+        const blue = document.getElementById('blue');
+        blue.addEventListener('click', function onClick(event) {
+
+            snakeClass = "blue";
+        });
+
+        const purple = document.getElementById('purple');
+        purple.addEventListener('click', function onClick(event) {
+
+            snakeClass = "purple";
+        });
+
+
+
 
 
         // Display the food
@@ -159,8 +199,9 @@ function regenerateFood() {
 }
 
 function calculateRandom() {
+    let a = 2;
     let b = gridSize;
-    return Math.round(b * Math.random());
+    return Math.round((b-a) * Math.random())+1;
 }
 
 

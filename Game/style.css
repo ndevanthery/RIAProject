@@ -59,6 +59,36 @@
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(10, 1fr);
 }
+#green {
+    height: 30px;
+    width: 30px;
+    background-color: green;
+}
+#red {
+    height: 30px;
+    width: 30px;
+    background-color: red;
+}
+#yellow {
+    height: 30px;
+    width: 30px;
+    background-color: yellow;
+}
+#grey {
+    height: 30px;
+    width: 30px;
+    background-color: grey;
+}
+#blue {
+    height: 30px;
+    width: 30px;
+    background-color: blue;
+}
+#purple {
+    height: 30px;
+    width: 30px;
+    background-color: purple;
+}
 
 /*design of the head of the snake*/
 .headConstantin {
@@ -83,12 +113,40 @@
 }
 
 /*design of the body of the snake*/
-.snake {
+.greenSnake {
     background-color: green;
     border: .25vmin solid white;
     border-radius: 12px;
 }
 
+.redSnake {
+    background-color: red;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.yellowSnake {
+    background-color: yellow;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.greySnake {
+    background-color: grey;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.blueSnake {
+    background-color: blue;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+.purpleSnake {
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
 
 /*deisign of the "apples" (food) for the snake*/
 .foodTrump {
