@@ -25,7 +25,7 @@ let snakeClass = 'green';
 
 
 //game Parameters
-let speed = 10;
+let speed = 8;
 let gridSize = 10;
 
 
