@@ -6,8 +6,8 @@
     margin: 0;
 }
 
-.body {
-    background: url("../src/res/background.jpg");
+.game {
+    background: url("./ressources/assets/bg_screen.jpeg");
     min-height: 100vh;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
@@ -92,21 +92,21 @@
 
 /*design of the head of the snake*/
 .headConstantin {
-    background-image: url('./assets/constantin.png');
+    background-image: url('./ressources/assets/constantin.png');
     background-size: contain;
     transform: scale(1.02);
     border-radius: 9px;
 }
 
 .headTrump {
-    background-image: url('./assets/trump.png');
+    background-image: url('./ressources/assets/trump.png');
     background-size: contain;
     transform: scale(1.02);
     border-radius: 9px;
 }
 
 .headDalailama {
-    background-image: url('./assets/dalailama.png');
+    background-image: url('./ressources/assets/dalailama.png');
     background-size: contain;
     transform: scale(1.02);
     border-radius: 9px;
@@ -150,19 +150,19 @@
 
 /*deisign of the "apples" (food) for the snake*/
 .foodTrump {
-    background-image: url('./assets/moneyBag.jpg');
+    background-image: url('./ressources/assets/moneyBag.jpg');
     background-size: contain;
     border-radius: 8px;
 }
 
 .foodDalailama {
-    background-image: url('./assets/peace.png');
+    background-image: url('./ressources/assets/peace.png');
     background-size: contain;
     border-radius: 8px;
 }
 
 .foodConstantin {
-    background-image: url('./assets/football.png');
+    background-image: url('./ressources/assets/football.png');
     background-size: contain;
     border-radius: 8px;
 }

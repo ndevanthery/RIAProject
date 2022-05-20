@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ressources/css/style_start.css">
+    <link rel="Script1" href="\ressources\script\Script1.js" />
+</head>
+<body>
+
+    <header>
+        <h1>HES-SO Vs - 624-2 - HTML/CSS/JavaScript</h1>
+
+        <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="ressources\images\hamburger_icon.jpg" style="height: 22px;">
+            </a>
+            <a href="description_start.html">Description</a>
+            <a href="maquettes_start.html">Maquettes</a>
+            <a href="mockup_start.html">Mockup</a>
+            <a href="flux_start.html">Flux</a>
+            <a href="journal_de_bord_start.html">Journal de bord</a>
+            <a href="index_game.html" class="active">Snake Game</a>
+        </div>
+
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+
+    </header>
+
+    <main>
+        <section id="game">
+        </section>
+        <div class="body">
+            <div id="scoreBox">Score: 0</div>
+            <div id="hiscoreBox">record: 0</div>
+            <div id="chooseCharacter"> choose a character : </div>
+            <div id="parameters">
+
+                <button id="trump"><img src="./ressources/assets/trump.png" height="60" width="60"></button>
+                <button id="dalailama"><img src="./ressources/assets/dalailama.png" height="60" width="60"></button>
+                <button id="constantin"><img src="./ressources/assets/constantin.png" height="60" width="60"></button>
+                <br />
+                <button id="green"></button>
+                <button id="red"></button>
+                <button id="yellow"></button>
+                <button id="grey"></button>
+                <button id="blue"></button>
+                <button id="purple"></button>
+
+            </div>
+            <div id="board"></div>
+        </div>
+    </main>
+    <div class="space">
+
+    </div>
+    <footer>
+        <img id="logo" src="ressources/images/logo.png">
+    </footer>
+
+</body>
+</html>
