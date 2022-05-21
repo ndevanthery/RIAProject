@@ -177,9 +177,6 @@ function gameEngine() {
         });
 
 
-
-
-
         // Display the food
         foodElement = document.createElement('div');
         foodElement.style.gridRowStart = food.y;

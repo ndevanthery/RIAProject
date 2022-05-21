@@ -1,33 +1,34 @@
 
-html{
-	position: relative;
-	min-height: 100%;
+html {
+    position: relative;
+    min-height: 100%;
 }
 
 /*-------------------------------------------------------------------------------------------------------*/
 /*Bdy Style*/
 body {
-	/*Margin for the all website*/
-	margin: 0px;
-	height: 100%;
+    /*Margin for the all website*/
+    margin: 0px;
+    height: 100%;
 }
 
 /*-------------------------------------------------------------------------------------------------------*/
 /*Footer Style*/
 
 footer {
-	background-color: #404040;
-	position: absolute;
-	width: 100%;
-	line-height: 60px;
-	bottom: 0px;
-	margin-top: 250px;
+    background-color: #404040;
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    bottom: 0px;
+    margin-top: 250px;
 }
+
 #logo {
-	text-align: center;
-	margin: auto;
-	display: flex;
-	height: auto;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    height: auto;
 }
 
 /*-------------------------------------------------------------------------------------------------------*/
@@ -35,55 +36,55 @@ footer {
 
 
 h1 {
-	padding: 40px;
-	padding-bottom: 0px;
-	text-align: center;
-	background-image: linear-gradient(#FFDEA6, #F5763F);
-	color: white;
-	border-bottom-width: 20px;
-	border-bottom-color: #EE6743;
-	border-bottom-style: solid;
-	margin-bottom: 0px;
-	margin: 0px;
+    padding: 40px;
+    padding-bottom: 0px;
+    text-align: center;
+    background-image: linear-gradient(#FFDEA6, #F5763F);
+    color: white;
+    border-bottom-width: 20px;
+    border-bottom-color: #EE6743;
+    border-bottom-style: solid;
+    margin-bottom: 0px;
+    margin: 0px;
 }
 
 main a {
-	color: orangered;
+    color: orangered;
 }
 
 main header p {
-	border-top: solid 1px;
-	color: gray;
-	text-align: right;
+    border-top: solid 1px;
+    color: gray;
+    text-align: right;
 }
 
 main section {
-	width: 75%;
-	margin: 25px;
+    width: 75%;
+    margin: 25px;
 }
 
 #imgDesign {
-	height: 100%;
-	width: 100%;
-	object-fit: contain;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 
 
 .mediumImage {
-	height: 200px;
-	width: 200px;
+    height: 200px;
+    width: 200px;
 }
 
 .smalImage {
-	width: 100px;
-	margin-bottom: 50px;
+    width: 100px;
+    margin-bottom: 50px;
 }
 
 .column {
-	float: left;
-	width: 33.33%;
-	padding: 5px;
+    float: left;
+    width: 33.33%;
+    padding: 5px;
 }
 
 
@@ -94,63 +95,63 @@ main section {
 
 
 .topnav {
-	overflow: hidden;
-	background-color: #333;
+    overflow: hidden;
+    background-color: #333;
 }
 
-	.topnav a {
-		float: left;
-		display: block;
-		color: white;
-		text-align: center;
-		padding: 10px 10px;
-		padding: 14px 16px;
-		text-decoration: none;
-		font-weight: 700;
-		font-size: 20px;
-	}
+    .topnav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 10px;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 20px;
+    }
 
-		.topnav a:hover {
-			background-color: #ddd;
-			color: black;
-		}
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
 
-		.topnav a.active {
-			background-color: white;
-			color: orangered;
-		}
+        .topnav a.active {
+            background-color: white;
+            color: orangered;
+        }
 
-	.topnav .icon {
-		display: none;
-	}
+    .topnav .icon {
+        display: none;
+    }
 
 @media screen and (max-width: 600px) {
-	.topnav a {
-		display: none;
-	}
+    .topnav a {
+        display: none;
+    }
 
-		.topnav a.icon {
-			float: inherit;
-			display: block;
-		}
+        .topnav a.icon {
+            float: inherit;
+            display: block;
+        }
 }
 
 @media screen and (max-width: 600px) {
-	.topnav.responsive {
-		position: relative;
-	}
+    .topnav.responsive {
+        position: relative;
+    }
 
-		.topnav.responsive .icon {
-			position: center;
-			right: 0;
-			top: 0;
-		}
-		
-		.topnav.responsive a {
-			float: none;
-			display: block;
-			text-align: center;
-		}
+        .topnav.responsive .icon {
+            position: center;
+            right: 0;
+            top: 0;
+        }
+
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: center;
+        }
 }
 
 
@@ -160,154 +161,156 @@ main section {
 /*aside*/
 
 aside h3 {
-	line-height: 40px;
-	background-color: orangered;
-	background-size: 300px 300px;
-	color: white;
-	text-align: left;
-	padding: 0px 0px 0px 0px 0px;
-	margin: 0px;
+    line-height: 40px;
+    background-color: orangered;
+    background-size: 300px 300px;
+    color: white;
+    text-align: left;
+    padding: 0px 0px 0px 0px 0px;
+    margin: 0px;
 }
 
 aside ul {
-	display: table;
-	list-style-type: none;
-	text-align: left;
+    display: table;
+    list-style-type: none;
+    text-align: left;
 }
 
 aside li {
-	display: table;
-	text-align: left;
-	padding: 0px;
+    display: table;
+    text-align: left;
+    padding: 0px;
 }
 
 aside div {
-	display: table;
-	box-sizing: content-box;
-	position: absolute;
-	left: 80%;
-	top: 30%;
-	width: 18%;
-	border: 3px solid;
-	padding: 0px 0px 0px 0px;
-	box-shadow: 5px 10px #888888;
+    display: table;
+    box-sizing: content-box;
+    position: absolute;
+    left: 80%;
+    top: 30%;
+    width: 18%;
+    border: 3px solid;
+    padding: 0px 0px 0px 0px;
+    box-shadow: 5px 10px #888888;
 }
 
 @media screen and (max-width: 600px) {
-	aside div {
-		width: 90%;
-		position: absolute;
-		top: auto;
-		right: 15px;
-		left: 5%;
-	}
+    aside div {
+        width: 90%;
+        position: absolute;
+        top: auto;
+        right: 15px;
+        left: 5%;
+    }
 }
 
 .space {
-	height: 384px
+    height: 384px
 }
 
 /*-------------------------------------------------------------------------------------------------------*/
 /*Maquettes Page*/
 .maquette {
-	height: 500px;
-	width: 1000px;
-	margin: 14px;
-	margin-bottom: 150px;
+    height: 500px;
+    width: 1000px;
+    margin: 14px;
+    margin-bottom: 150px;
 }
 
 @media screen and (max-width: 600px) {
-	.maquette {
-		width: 100%;
-		top: auto;
-		right: 15px;
-		height: 150px;
-	}
+    .maquette {
+        width: 100%;
+        top: auto;
+        right: 15px;
+        height: 150px;
+    }
 }
 
 
 
 #maquetteImage {
-	max-width: 100%;
-	max-height: 100%;
-	display: block;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
 }
 
 /*-------------------------------------------------------------------------------------------------------*/
 /*Mockups Page*/
 #teteImage {
-	max-width: 100%;
-	max-height: 100%;
-	display: block;
-	border-radius: 15px;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    border-radius: 15px;
 }
 
 .tete {
-	height: 150px;
-	width: 150px;
-	border-radius: 15px;
-	margin: 14px;
-	background-color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    margin: 14px;
+    background-color: white;
 }
 
 
 @media screen and (max-width: 600px) {
-	.tete {
-		width: 100%;
-		top: auto;
-		right: 15px;
-	}
+    .tete {
+        width: 100%;
+        top: auto;
+        right: 15px;
+    }
 }
 
 
 #mockupImage {
-	max-width: 100%;
-	max-height: 100%;
-	display: block;
-	border: 1px solid black;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    border: 1px solid black;
 }
 
 .mockup {
-	height: 400px;
-	width: 220px;
-	margin: 14px;
-
+    height: 400px;
+    width: 220px;
+    margin: 14px;
 }
+
 .rowMockup {
-	margin-bottom: 100px;
-	display: flex;
+    margin-bottom: 100px;
+    display: flex;
 }
 
 @media screen and (max-width: 600px) {
-	.mockup {
-		width: 100%;
-		top: auto;
-		right: 15px;
-	}
-	.rowMockup {
-		height: 150px;
-		
-	}
+    .mockup {
+        width: 100%;
+        top: auto;
+        right: 15px;
+    }
+
+    .rowMockup {
+        height: 150px;
+    }
 }
 
 .bigImage {
-	height: 400px;
-	width: 220px;
-	margin: 14px;
+    height: 400px;
+    width: 220px;
+    margin: 14px;
 }
+
 @media screen and (max-width: 600px) {
-	.bigImage {
-		width: 100%;
-		top: auto;
-		right: 15px;
-		height: 0px;
-	}
+    .bigImage {
+        width: 100%;
+        top: auto;
+        right: 15px;
+        height: 0px;
+    }
 }
+
 #BigImageID {
-	max-width: 100%;
-	max-height: 100%;
-	display: block;
-	border: 1px solid black;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    border: 1px solid black;
 }
 
 
@@ -315,118 +318,119 @@ aside div {
 /*Flux Page*/
 
 .sitemap {
-	height: 500px;
-	width: 1000px;
-	margin: 14px;
+    height: 500px;
+    width: 1000px;
+    margin: 14px;
 }
 
 @media screen and (max-width: 600px) {
-	.sitemap {
-		width: 100%;
-		top: auto;
-		right: 15px;
-		height: 150px;
-	}
+    .sitemap {
+        width: 100%;
+        top: auto;
+        right: 15px;
+        height: 150px;
+    }
 }
 
 
 
 #sitemapImage {
-	max-width: 100%;
-	max-height: 100%;
-	display: block;
-	border-radius: 15px;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    border-radius: 15px;
 }
 
 .flux {
-	height: auto;
-	width: 1000px;
-	margin: 14px;
+    height: auto;
+    width: 1000px;
+    margin: 14px;
 }
 
 .rowFlux {
-	margin-bottom: 100px;
-	display: flex;
+    margin-bottom: 100px;
+    display: flex;
 }
 
 
 
 @media screen and (max-width: 600px) {
-	.flux {
-		width: 200%;
-		top: auto;
-		right: 15px;
-		margin: 0px;
-	}
-	.rowFlux{
-		display: block;
-	}
+    .flux {
+        width: 200%;
+        top: auto;
+        right: 15px;
+        margin: 0px;
+    }
+
+    .rowFlux {
+        display: block;
+    }
 }
 
 #fluxImage {
-	max-width: 40%;
-	max-height: 40%;
-	display: block;
+    max-width: 40%;
+    max-height: 40%;
+    display: block;
 }
 
 
 
-	/*-------------------------------------------------------------------------------------------------------*/
-	/*Journal de bord*/
+/*-------------------------------------------------------------------------------------------------------*/
+/*Journal de bord*/
 
 
-	.row::after {
-	content: "";
-	clear: both;
-	display: table;
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .row {
-	display: flex;
-	margin-bottom: 100px;
+    display: flex;
+    margin-bottom: 100px;
 }
 
 .column {
-	flex: 33.33%;
-	padding: 5px;
+    flex: 33.33%;
+    padding: 5px;
 }
 
 #customers {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	border-collapse: collapse;
-	width: 95%;
-	margin-bottom: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border-collapse: collapse;
+    width: 95%;
+    margin-bottom: 150px;
 }
 
-	#customers td, #customers th {
-		border: 1px solid #ddd;
-		padding: 8px;
-	}
+    #customers td, #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
 
-	#customers tr:nth-child(even) {
-		background-color: #f2f2f2;
-	}
+    #customers tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
 
-	#customers tr:hover {
-		background-color: #ddd;
-	}
+    #customers tr:hover {
+        background-color: #ddd;
+    }
 
-	#customers th {
-		padding-top: 12px;
-		padding-bottom: 12px;
-		padding-right: 12px;
-		text-align: center;
-		background-color: rgb(140, 140, 140);
-		color: white;
-	}
+    #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-right: 12px;
+        text-align: center;
+        background-color: rgb(140, 140, 140);
+        color: white;
+    }
 
 table {
-	margin: right: 50px;
+    margin: right: 50px;
 }
 
 .row-btn {
-	display: inline-block;
+    display: inline-block;
 }
 
 
@@ -434,180 +438,198 @@ table {
 /*-------------------------------------------------------------------------------------------------------*/
 /*Game*/
 
-
-
-.body {
-	background: url("/ressources/assets/bg_screen.jpeg");
-	min-height: 100vh;
-	background-size: 100vw 100vh;
-	background-repeat: no-repeat;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.column {
+    padding: 10px;
 }
 
-#scoreBox {
-	position: absolute;
-	top: 9px;
-	right: 200px;
-	font-size: 39px;
-	font-weight: bold;
-	font-family: 'New Tegomin', serif;
+.left {
+    float: left;
+    width: 60%;
 }
 
-#hiscoreBox {
-	position: absolute;
-	top: 59px;
-	right: 140px;
-	font-size: 39px;
-	font-weight: bold;
-	font-family: 'New Tegomin', serif;
+.right {
+    float: left;
+    width: 40%;
 }
 
-#chooseCharacter {
-	position: absolute;
-	top: 119px;
-	right: 140px;
-	font-size: 18px;
-	font-family: 'New Tegomin', serif;
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .column {
+        width: 100%;
+    }
 }
 
-#parameters {
-	position: absolute;
-	top: 149px;
-	right: 140px;
-	font-size: 18px;
-	font-family: 'New Tegomin', serif;
+.bodygame {
+    position:relative;
+    margin:14px;
+    background: url("/ressources/assets/bg_screen.jpeg");
+    min-height: 30vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scoreBox {
+    position: absolute;
+    top: 0;
+    left:0;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+.chooseCharacter {
+    position:absolute;
+    bottom:0;
+    left:0;
+    font-size: 18px;
+    font-family: 'New Tegomin', serif;
+}
+.hiscoreBox {
+    position: absolute;
+    top: 0;
+    right:0;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+.parameters {
+    position: absolute;
+    bottom:0;
+    right:0;
+    font-size: 18px;
+    font-family: 'New Tegomin', serif;
 }
 
 
 /*this is the design of the grid for the snake*/
 #board {
-	width: 90vmin;
-	height: 92vmin;
-	border: 2px solid black;
-	display: grid;
-	grid-template-rows: repeat(10, 1fr);
-	grid-template-columns: repeat(10, 1fr);
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr);
 }
 
 #green {
-	height: 30px;
-	width: 30px;
-	background-color: green;
+    height: 30px;
+    width: 30px;
+    background-color: green;
 }
 
 #red {
-	height: 30px;
-	width: 30px;
-	background-color: red;
+    height: 30px;
+    width: 30px;
+    background-color: red;
 }
 
 #yellow {
-	height: 30px;
-	width: 30px;
-	background-color: yellow;
+    height: 30px;
+    width: 30px;
+    background-color: yellow;
 }
 
 #grey {
-	height: 30px;
-	width: 30px;
-	background-color: grey;
+    height: 30px;
+    width: 30px;
+    background-color: grey;
 }
 
 #blue {
-	height: 30px;
-	width: 30px;
-	background-color: blue;
+    height: 30px;
+    width: 30px;
+    background-color: blue;
 }
 
 #purple {
-	height: 30px;
-	width: 30px;
-	background-color: purple;
+    height: 30px;
+    width: 30px;
+    background-color: purple;
 }
 
 /*design of the head of the snake*/
 .headConstantin {
-	background-image: url('./ressources/assets/constantin.png');
-	background-size: contain;
-	transform: scale(1.02);
-	border-radius: 9px;
+    background-image: url('./ressources/assets/constantin.png');
+    background-size: contain;
+    transform: scale(1.02);
+    border-radius: 9px;
 }
 
 .headTrump {
-	background-image: url('./ressources/assets/trump.png');
-	background-size: contain;
-	transform: scale(1.02);
-	border-radius: 9px;
+    background-image: url('./ressources/assets/trump.png');
+    background-size: contain;
+    transform: scale(1.02);
+    border-radius: 9px;
 }
 
 .headDalailama {
-	background-image: url('./ressources/assets/dalailama.png');
-	background-size: contain;
-	transform: scale(1.02);
-	border-radius: 9px;
+    background-image: url('./ressources/assets/dalailama.png');
+    background-size: contain;
+    transform: scale(1.02);
+    border-radius: 9px;
 }
 
 /*design of the body of the snake*/
 .greenSnake {
-	background-color: green;
-	border: .25vmin solid white;
-	border-radius: 12px;
+    background-color: green;
+    border: .25vmin solid white;
+    border-radius: 12px;
 }
 
 .redSnake {
-	background-color: red;
-	border: .25vmin solid white;
-	border-radius: 12px;
+    background-color: red;
+    border: .25vmin solid white;
+    border-radius: 12px;
 }
 
 .yellowSnake {
-	background-color: yellow;
-	border: .25vmin solid white;
-	border-radius: 12px;
+    background-color: yellow;
+    border: .25vmin solid white;
+    border-radius: 12px;
 }
 
 .greySnake {
-	background-color: grey;
-	border: .25vmin solid white;
-	border-radius: 12px;
+    background-color: grey;
+    border: .25vmin solid white;
+    border-radius: 12px;
 }
 
 .blueSnake {
-	background-color: blue;
-	border: .25vmin solid white;
-	border-radius: 12px;
+    background-color: blue;
+    border: .25vmin solid white;
+    border-radius: 12px;
 }
 
 .purpleSnake {
-	background-color: purple;
-	border: .25vmin solid white;
-	border-radius: 12px;
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
 }
 
 /*deisign of the "apples" (food) for the snake*/
 .foodTrump {
-	background-image: url('./ressources/assets/moneyBag.jpg');
-	background-size: contain;
-	border-radius: 8px;
+    background-image: url('./ressources/assets/moneyBag.jpg');
+    background-size: contain;
+    border-radius: 8px;
 }
 
 .foodDalailama {
-	background-image: url('./ressources/assets/peace.png');
-	background-size: contain;
-	border-radius: 8px;
+    background-image: url('./ressources/assets/peace.png');
+    background-size: contain;
+    border-radius: 8px;
 }
 
 .foodConstantin {
-	background-image: url('./ressources/assets/football.png');
-	background-size: contain;
-	border-radius: 8px;
+    background-image: url('./ressources/assets/football.png');
+    background-size: contain;
+    border-radius: 8px;
 }
-
-
-
-
-
-
-

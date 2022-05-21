@@ -39,29 +39,44 @@
     </header>
 
     <main>
-        <section id="game">
+        <section id="articles">
+            <article>
+                <header>
+                    <h2>Our Snake Game</h2>
+                    <p>Par Mégane Solliard le 19/05/2022 à 17:00</p>
+                </header>
+            </article>
         </section>
-        <div class="body">
-            <div id="scoreBox">Score: 0</div>
-            <div id="hiscoreBox">record: 0</div>
-            <div id="chooseCharacter"> choose a character : </div>
-            <div id="parameters">
-
-                <button id="trump"><img src="./ressources/assets/trump.png" height="60" width="60"></button>
-                <button id="dalailama"><img src="./ressources/assets/dalailama.png" height="60" width="60"></button>
-                <button id="constantin"><img src="./ressources/assets/constantin.png" height="60" width="60"></button>
-                <br />
-                <button id="green"></button>
-                <button id="red"></button>
-                <button id="yellow"></button>
-                <button id="grey"></button>
-                <button id="blue"></button>
-                <button id="purple"></button>
-
+        <div class="row">
+            <div class="column left">
+                <div id="board"></div>
             </div>
-            <div id="board"></div>
+
+            <div class="column right">
+                <div class="bodygame">
+                    <div class="scoreBox">Score: 0</div>
+                    <div class="chooseCharacter"> Choose a character : </div>
+                    <div class="hiscoreBox">record: 0</div>
+                    <div class="parameters">
+
+                        <button id="trump"><img src="./ressources/assets/trump.png" height="60" width="60"></button>
+                        <button id="dalailama"><img src="./ressources/assets/dalailama.png" height="60" width="60"></button>
+                        <button id="constantin"><img src="./ressources/assets/constantin.png" height="60" width="60"></button>
+                        <br />
+                        <button id="green"></button>
+                        <button id="red"></button>
+                        <button id="yellow"></button>
+                        <button id="grey"></button>
+                        <button id="blue"></button>
+                        <button id="purple"></button>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
+    
     <div class="space">
 
     </div>
