@@ -163,7 +163,7 @@ function gameEngine(callback) {
         green.addEventListener('click', function onClick(event) {
 
             snakeClass = "green";
-            $("#green").hide();
+            $("#green").hide().slideUp(1000); // chainage JQuery
             $("#red").show();
             $("#yellow").show();
             $("#grey").show();
@@ -412,3 +412,16 @@ window.addEventListener('keydown', e => {
     }
 
 });
+
+function validateFormOnSubmit(theForm) {
+    var reason = "";
+    let person = {
+        firstName: theForm.fname.value,
+        lastName: theForm.lname.value,
+    };
+
+    alert(person.firstName + ' ' + person.lastName + 'was entered in the scoreboard with a highest score of : ' + hiscore);
+
+   
+    return false;
+}

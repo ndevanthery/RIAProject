@@ -51,7 +51,8 @@
 
 /*this is the design of the grid for the snake*/
 #board {
-    
+    position:absolute;
+    top: 200px;
     width: 90vmin;
     height: 92vmin;
     border: 2px solid black;
@@ -191,4 +192,53 @@
     height: 60px;
     width: 60px;
 }
+
+#show{
+    height:60px;
+    width:120px;
+    position:relative;
+    top:25px;
+    left:25px;
+    
+}
+#message {
+    height: 60px;
+    width: 120px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
+
+#namelbl {
+    position: relative;
+    top: 20px;
+    left: 25px;
+}
+#nametxt {
+    position: relative;
+    top: 20px;
+    left: 25px;
+}
+
+#lnamelbl {
+    position: relative;
+    top: 20px;
+    left: 25px;
+}
+
+#lnametxt {
+    position: relative;
+    top: 20px;
+    left: 25px;
+}
+#submitBut { 
+    height:75px;
+    width:150px;
+    position: relative;
+    top: 20px;
+    left: 25px;
+}
+
+
+
 

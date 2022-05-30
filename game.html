@@ -64,15 +64,24 @@
     </div>
     <script src="ressources\script\geoLoc.js"></script>
 
+
+    <form action="#" onsubmit="return validateFormOnSubmit(this);">
+        <label id ="namelbl" for="fname">First name:</label><br>
+        <input id ="nametxt" type="text"  name="fname" value="John"><br>
+        <label id ="lnamelbl" for="lname">Last name:</label><br>
+        <input id ="lnametxt" type="text"  name="lname" value="Doe"><br><br>
+        <input id="submitBut" type="submit" value="Submit your score">
+    </form>
+
     <div class="body">
         <div id="scoreBox">Score: 0</div>
         <div id="hiscoreBox">record: 0</div>
         <div id="chooseCharacter"> choose a character : </div>
         <div id="parameters">
 
-            <div class = "trump" draggable="true"></div>
-            <div class="dalailama"  draggable="true"></div>
-            <div class="constantin"  draggable="true"></div>
+            <div class="trump" draggable="true"></div>
+            <div class="dalailama" draggable="true"></div>
+            <div class="constantin" draggable="true"></div>
             <br />
             <button id="green"></button>
             <button id="red"></button>
