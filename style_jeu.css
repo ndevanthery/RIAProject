@@ -18,7 +18,7 @@
 
 #scoreBox {
     position: absolute;
-    top: 9px;
+    top: 200px;
     right: 200px;
     font-size: 39px;
     font-weight: bold;
@@ -27,7 +27,7 @@
 
 #hiscoreBox {
     position: absolute;
-    top: 59px;
+    top: 259px;
     right: 140px;
     font-size: 39px;
     font-weight: bold;
@@ -35,14 +35,14 @@
 }
 #chooseCharacter {
     position: absolute;
-    top: 119px;
+    top: 319px;
     right: 140px;
     font-size: 18px;
     font-family: 'New Tegomin', serif;
 }
 #parameters {
     position: absolute;
-    top: 149px;
+    top: 349px;
     right: 140px;
     font-size: 18px;
     font-family: 'New Tegomin', serif;
@@ -166,3 +166,29 @@
     background-size: contain;
     border-radius: 8px;
 }
+
+
+.hold {
+    border: solid 5px #ccc;
+}
+
+.trump {
+    background-image: url('./assets/trump.png');
+    background-size: contain;
+    height: 60px;
+    width: 60px;
+}
+
+.dalailama {
+    background-image: url('./assets/dalailama.png');
+    background-size: contain;
+    height: 60px;
+    width: 60px;
+}
+.constantin {
+    background-image: url('./assets/constantin.png');
+    background-size: contain;
+    height: 60px;
+    width: 60px;
+}
+
