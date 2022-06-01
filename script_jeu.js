@@ -1,4 +1,6 @@
 // Initial Values
+$("#green").hide();
+
 let inputDir;
 let actualState;
 let score;
@@ -21,6 +23,7 @@ else {
 
 //by default, first character is trump
 let person = "Trump";
+let draggedPers = '';
 let snakeClass = 'green';
 
 
@@ -43,17 +46,21 @@ function main(ctime) {
     lastRefreshTime = ctime;
 
     //game logic
-    gameEngine();
+    gameEngine(function () {
+        moveSnake();
+    }
+    );
 }
 
 
 
-function gameEngine() {
+function gameEngine(callback) {
     // Part 1: Updating the snake array & Food
 
 
     if (isCollide(snakeArr)) {
-
+        var audio = new Audio('gameover.mp3');
+        audio.play();
         alert("Game Over. this is your score : " + score);
         init();
 
@@ -82,12 +89,8 @@ function gameEngine() {
         }
 
         // Moving the snake
-        for (let i = snakeArr.length - 2; i >= 0; i--) {
-            snakeArr[i + 1] = { ...snakeArr[i] };
-        }
 
-        snakeArr[0].x += inputDir.x;
-        snakeArr[0].y += inputDir.y;
+        callback && callback();
 
         // Part 2: Display the snake and Food
 
@@ -110,60 +113,156 @@ function gameEngine() {
             board.appendChild(snakeElement);
         });
 
+
+        
         //buttons to choose
-        const trump = document.getElementById('trump');
-        trump.addEventListener('click', function onClick(event) {
 
-            person = "Trump";
-        });
 
-        const dalailama = document.getElementById('dalailama');
-        dalailama.addEventListener('click', function onClick(event) {
-            person = "Dalailama";
+        var script = document.createElement('script');
+        script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
+        document.getElementsByTagName('head')[0].appendChild(script);
 
-        });
+        const trump = document.querySelector('.trump');
+        trump.addEventListener('dragstart', trumpDragStart);
+        trump.addEventListener('dragend', trumpDragEnd);
 
-        const constantin = document.getElementById('constantin');
-        constantin.addEventListener('click', function onClick(event) {
-            person = "Constantin";
+        function trumpDragStart() {
+            draggedPers = 'Trump';
+            this.classList += ' hold';
+        }
+        function trumpDragEnd() {
+            this.className = 'trump';
 
-        });
+        }
+
+        const dalailama = document.querySelector('.dalailama');
+        dalailama.addEventListener('dragstart', dalailamaDragStart);
+        dalailama.addEventListener('dragend', dalailamaDragEnd);
+
+        function dalailamaDragStart() {
+            draggedPers = 'Dalailama';
+            this.classList += ' hold';
+}
+        function dalailamaDragEnd() {
+            this.className = 'dalailama';
+}
+
+        const constantin = document.querySelector('.constantin');
+        constantin.addEventListener('dragstart', constantinDragStart);
+        constantin.addEventListener('dragend', constantinDragEnd);
+
+        function constantinDragStart() {
+            draggedPers = 'Constantin';
+            this.classList += ' hold';
+}
+        function constantinDragEnd() {
+            this.className = 'constantin';
+}
 
         const green = document.getElementById('green');
         green.addEventListener('click', function onClick(event) {
 
             snakeClass = "green";
+            $("#green").hide().slideUp(1000); // chainage JQuery
+            $("#red").show();
+            $("#yellow").show();
+            $("#grey").show();
+            $("#blue").show();
+            $("#purple").show();
+
+
         });
 
         const red = document.getElementById('red');
         red.addEventListener('click', function onClick(event) {
 
             snakeClass = "red";
+            $("#green").show();
+            $("#red").hide();
+            $("#yellow").show();
+            $("#grey").show();
+            $("#blue").show();
+            $("#purple").show();
         });
 
         const yellow = document.getElementById('yellow');
         yellow.addEventListener('click', function onClick(event) {
 
             snakeClass = "yellow";
+            $("#green").show();
+            $("#red").show();
+            $("#yellow").hide();
+            $("#grey").show();
+            $("#blue").show();
+            $("#purple").show();
         });
 
         const grey = document.getElementById('grey');
         grey.addEventListener('click', function onClick(event) {
 
             snakeClass = "grey";
-        });
+            $("#green").show();
+            $("#red").show();
+            $("#yellow").show();
+            $("#grey").hide();
+            $("#blue").show();
+            $("#purple").show();        });
 
         const blue = document.getElementById('blue');
         blue.addEventListener('click', function onClick(event) {
 
             snakeClass = "blue";
+            $("#green").show();
+            $("#red").show();
+            $("#yellow").show();
+            $("#grey").show();
+            $("#blue").hide();
+            $("#purple").show();
         });
 
         const purple = document.getElementById('purple');
         purple.addEventListener('click', function onClick(event) {
 
             snakeClass = "purple";
+            $("#green").show();
+            $("#red").show();
+            $("#yellow").show();
+            $("#grey").show();
+            $("#blue").show();
+            $("#purple").hide();
         });
+
+
+        board.addEventListener('dragover', dragOver);
+        board.addEventListener('dragenter', dragEnter);
+        board.addEventListener('dragleave', dragLeave);
+        board.addEventListener('drop', dragDrop);
+
+
+        function dragStart() {
+            
+        }
+
+        function dragEnd() {
+            
+        }
+
+        function dragOver(e) {
+            e.preventDefault();
+        }
+
+        function dragEnter(e) {
+            e.preventDefault();
+        }
+
+        function dragLeave() {
+        }
+
+        function dragDrop() {
+            console.log(draggedPers);
+            person = draggedPers;
+        }
+
 
 
 
@@ -184,6 +283,14 @@ function gameEngine() {
 
 
 
+}
+function moveSnake() {
+    for (let i = snakeArr.length - 2; i >= 0; i--) {
+        snakeArr[i + 1] = { ...snakeArr[i] };
+    }
+
+    snakeArr[0].x += inputDir.x;
+    snakeArr[0].y += inputDir.y;
 }
 
 function regenerateFood() {
@@ -305,3 +412,16 @@ window.addEventListener('keydown', e => {
     }
 
 });
+
+function validateFormOnSubmit(theForm) {
+    var reason = "";
+    let person = {
+        firstName: theForm.fname.value,
+        lastName: theForm.lname.value,
+    };
+
+    alert(person.firstName + ' ' + person.lastName + 'was entered in the scoreboard with a highest score of : ' + hiscore);
+
+   
+    return false;
+}

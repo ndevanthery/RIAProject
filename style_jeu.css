@@ -1,0 +1,311 @@
+
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background: url("../src/res/background.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox {
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#hiscoreBox {
+    position: absolute;
+    top: 259px;
+    right: 140px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+#chooseCharacter {
+    position: absolute;
+    top: 319px;
+    right: 140px;
+    font-size: 18px;
+    font-family: 'New Tegomin', serif;
+}
+#parameters {
+    position: absolute;
+    top: 349px;
+    right: 140px;
+    font-size: 18px;
+    font-family: 'New Tegomin', serif;
+}
+
+
+/*this is the design of the grid for the snake*/
+#board {
+    position: absolute;
+    top: 200px;
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+
+}
+#green {
+    height: 30px;
+    width: 30px;
+    background-color: green;
+}
+#red {
+    height: 30px;
+    width: 30px;
+    background-color: red;
+}
+#yellow {
+    height: 30px;
+    width: 30px;
+    background-color: yellow;
+}
+#grey {
+    height: 30px;
+    width: 30px;
+    background-color: grey;
+}
+#blue {
+    height: 30px;
+    width: 30px;
+    background-color: blue;
+}
+#purple {
+    height: 30px;
+    width: 30px;
+    background-color: purple;
+}
+
+/*design of the head of the snake*/
+.headConstantin {
+    background-image: url('./assets/constantin.png');
+    background-size: contain;
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.headTrump {
+    background-image: url('./assets/trump.png');
+    background-size: contain;
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.headDalailama {
+    background-image: url('./assets/dalailama.png');
+    background-size: contain;
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+/*design of the body of the snake*/
+.greenSnake {
+    background-color: green;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.redSnake {
+    background-color: red;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.yellowSnake {
+    background-color: yellow;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.greySnake {
+    background-color: grey;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.blueSnake {
+    background-color: blue;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+.purpleSnake {
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+/*deisign of the "apples" (food) for the snake*/
+.foodTrump {
+    background-image: url('./assets/moneyBag.png');
+    background-size: contain;
+    border-radius: 8px;
+}
+
+.foodDalailama {
+    background-image: url('./assets/peace.png');
+    background-size: contain;
+    border-radius: 8px;
+}
+
+.foodConstantin {
+    background-image: url('./assets/football.png');
+    background-size: contain;
+    border-radius: 8px;
+}
+
+
+.hold {
+    border: solid 5px #ccc;
+}
+
+.trump {
+    background-image: url('./assets/trump.png');
+    background-size: contain;
+    height: 60px;
+    width: 60px;
+}
+
+.dalailama {
+    background-image: url('./assets/dalailama.png');
+    background-size: contain;
+    height: 60px;
+    width: 60px;
+}
+.constantin {
+    background-image: url('./assets/constantin.png');
+    background-size: contain;
+    height: 60px;
+    width: 60px;
+}
+
+#show {
+    height: 60px;
+    width: 170px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    border-radius: 10px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 15px;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#show:hover {
+    -webkit-transform: scale(1.1); /* Safari et Chrome */
+    -moz-transform: scale(1.1); /* Firefox */
+    -ms-transform: scale(1.1); /* Internet Explorer 9 */
+    -o-transform: scale(1.1); /* Opera */
+    transform: scale(1.1);
+}
+
+
+
+#message {
+    height: 60px;
+    width: 120px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#namelbl {
+    position: relative;
+    top: 20px;
+    left: 25px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 15px;
+}
+#nametxt {
+    position: relative;
+    top: 20px;
+    left: 25px;
+    width: 170px;
+    height: 25px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#lnamelbl {
+    position: relative;
+    top: 20px;
+    left: 25px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#lnametxt {
+    position: relative;
+    top: 20px;
+    left: 25px;
+    width: 170px;
+    height: 25px;
+    border-radius: 10px;
+    
+}
+#submitBut {
+    height: 60px;
+    width: 170px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    border-radius: 10px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 15px;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+#submitBut:hover {
+    -webkit-transform: scale(1.1); /* Safari et Chrome */
+    -moz-transform: scale(1.1); /* Firefox */
+    -ms-transform: scale(1.1); /* Internet Explorer 9 */
+    -o-transform: scale(1.1); /* Opera */
+    transform: scale(1.1);
+}
+
+
+.infobox {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 13%;
+    height: 360px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+#board {
+    background-image: url("back4.png");
+    background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+    .infobox {
+        display: none;
+    }
+}
